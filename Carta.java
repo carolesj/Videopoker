@@ -10,6 +10,7 @@ public class Carta extends java.lang.Object{
     int naipe;
     boolean foi_tirada = false;
 
+
     @Override
     public String toString () {
         String retorno;
@@ -33,6 +34,6 @@ public class Carta extends java.lang.Object{
         } else {
             retorno += "Copas";
         }
+    return retorno;
     }
-
 }

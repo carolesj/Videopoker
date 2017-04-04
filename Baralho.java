@@ -19,7 +19,7 @@ public class Baralho {
     Carta baralho[];
 
     Random rand = new Random();
-    public tira_mao () {
+    public Carta[] tira_mao () {
         Carta mao[];
         int posicao;
         mao = new Carta [5];
@@ -30,8 +30,15 @@ public class Baralho {
             mao[i] = baralho[posicao];
             baralho[posicao].foi_tirada = true;
         }
-
+        return mao;
     }
+
+    public void printa_mao (Carta[] mao) {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("        "+ mao[i]);
+        }
+    }
+
 
 
 }
